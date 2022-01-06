@@ -5,11 +5,11 @@ function DisplayQuote({ quote }) {
   return (
     quote && (
       <div className='DisplayQuote'>
-        <img src={quote[0].image} alt={quote[0].character} />
+        <img src={quote.image} alt={quote.character} />
         <ul>
-          <li>Quote: {quote[0].quote}</li>
+          <li>Quote: {quote.quote}</li>
           <li>
-            Name: {quote[0].character}
+            Name: {quote.character}
           </li>
         </ul>
       </div>

@@ -17,7 +17,7 @@ function App() {
     axios  
       .get('https://simpsons-quotes-api.herokuapp.com/quotes')  
       // Extract the DATA from the received response  
-      .then((response) => response.data)
+      .then((response) => response.data[0])
       // Use this data to update the state  
       .then((data) => {
           setQuote(data)
